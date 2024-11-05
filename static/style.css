@@ -8,6 +8,10 @@ body {
     overflow: hidden;
 }
 
+button {
+    font-family: 'SilkScreen';
+}
+
 div.content {
     width: 100vw;
     height: 90vh;
@@ -62,4 +66,16 @@ nav > div > img {
     width: 12px;
     height: 12px;
     top: 10px;
+}
+
+button#upgrade {
+    width: 80%;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 80px;
+    left: 10%
 }
