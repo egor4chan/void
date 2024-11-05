@@ -4,62 +4,62 @@ check_location()
 
 function check_location() {
     if (LocationNow == 1) {
-        //document.getElementById('content_void').style.top = '10vh'
+        document.getElementById('content_void').style.top = '10vh'
         document.getElementById('content_void').style.zIndex = '100';
         document.getElementById('content_void').style.opacity = '1';
 
-        //document.getElementById('content_tasks').style.top = '100vh'
+        document.getElementById('content_tasks').style.top = '100vh'
         document.getElementById('content_tasks').style.zIndex = '-100'
         document.getElementById('content_tasks').style.opacity = '0'
-        //document.getElementById('content_frens').style.top = '100vh'
+        document.getElementById('content_frens').style.top = '100vh'
         document.getElementById('content_frens').style.zIndex = '-100'
         document.getElementById('content_frens').style.opacity = '0'
-        //document.getElementById('content_top').style.top = '100vh'
+        document.getElementById('content_top').style.top = '100vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
     }
     if (LocationNow == 2) {
-        //document.getElementById('content_tasks').style.top = '10vh'
+        document.getElementById('content_tasks').style.top = '10vh'
         document.getElementById('content_tasks').style.zIndex = '100';
         document.getElementById('content_tasks').style.opacity = '1';
 
-        //document.getElementById('content_void').style.top = '100vh'
+        document.getElementById('content_void').style.top = '100vh'
         document.getElementById('content_void').style.zIndex = '-100'
         document.getElementById('content_void').style.opacity = '0'
-        //document.getElementById('content_frens').style.top = '100vh'
+        document.getElementById('content_frens').style.top = '100vh'
         document.getElementById('content_frens').style.zIndex = '-100'
         document.getElementById('content_frens').style.opacity = '0'
-        //document.getElementById('content_top').style.top = '100vh'
+        document.getElementById('content_top').style.top = '100vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
     }
     if (LocationNow == 3) {
-        //document.getElementById('content_frens').style.top = '10vh'
+        document.getElementById('content_frens').style.top = '10vh'
         document.getElementById('content_frens').style.zIndex = '100';
         document.getElementById('content_frens').style.opacity = '1';
 
-        //document.getElementById('content_void').style.top = '100vh'
+        document.getElementById('content_void').style.top = '100vh'
         document.getElementById('content_void').style.zIndex = '-100'
         document.getElementById('content_void').style.opacity = '0'
-        //document.getElementById('content_tasks').style.top = '100vh'
+        document.getElementById('content_tasks').style.top = '100vh'
         document.getElementById('content_tasks').style.zIndex = '-100'
         document.getElementById('content_tasks').style.opacity = '0'
-        //document.getElementById('content_top').style.top = '100vh'
+        document.getElementById('content_top').style.top = '100vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
     }
     if (LocationNow == 4) {
-        //document.getElementById('content_top').style.top = '10vh'
+        document.getElementById('content_top').style.top = '10vh'
         document.getElementById('content_top').style.zIndex = '100';
         document.getElementById('content_top').style.opacity = '1';
 
-        //document.getElementById('content_void').style.top = '100vh'
+        document.getElementById('content_void').style.top = '100vh'
         document.getElementById('content_void').style.zIndex = '-100'
         document.getElementById('content_void').style.opacity = '0'
-        //document.getElementById('content_tasks').style.top = '100vh'
+        document.getElementById('content_tasks').style.top = '100vh'
         document.getElementById('content_tasks').style.zIndex = '-100'
         document.getElementById('content_tasks').style.opacity = '0'
-        //document.getElementById('content_frens').style.top = '100vh'
+        document.getElementById('content_frens').style.top = '100vh'
         document.getElementById('content_frens').style.zIndex = '-100'
         document.getElementById('content_frens').style.opacity = '0'
     }
