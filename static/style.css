@@ -32,7 +32,7 @@ div#void {
 nav {
     position: fixed;
     bottom: 0;
-    height: 60px;
+    height: 75px;
     width: 100%;
 
     flex-wrap: wrap;
@@ -76,6 +76,6 @@ button#upgrade {
     border: none;
     border-radius: 8px;
     position: absolute;
-    bottom: 80px;
+    bottom: 90px;
     left: 10%
 }
