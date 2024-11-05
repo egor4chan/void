@@ -8,13 +8,13 @@ function check_location() {
         document.getElementById('content_void').style.zIndex = '100';
         document.getElementById('content_void').style.opacity = '1';
 
-        document.getElementById('content_tasks').style.top = '100vh'
+        document.getElementById('content_tasks').style.top = '30vh'
         document.getElementById('content_tasks').style.zIndex = '-100'
         document.getElementById('content_tasks').style.opacity = '0'
-        document.getElementById('content_frens').style.top = '100vh'
+        document.getElementById('content_frens').style.top = '30vh'
         document.getElementById('content_frens').style.zIndex = '-100'
         document.getElementById('content_frens').style.opacity = '0'
-        document.getElementById('content_top').style.top = '100vh'
+        document.getElementById('content_top').style.top = '30vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
     }
@@ -23,13 +23,13 @@ function check_location() {
         document.getElementById('content_tasks').style.zIndex = '100';
         document.getElementById('content_tasks').style.opacity = '1';
 
-        document.getElementById('content_void').style.top = '100vh'
+        document.getElementById('content_void').style.top = '30vh'
         document.getElementById('content_void').style.zIndex = '-100'
         document.getElementById('content_void').style.opacity = '0'
-        document.getElementById('content_frens').style.top = '100vh'
+        document.getElementById('content_frens').style.top = '30vh'
         document.getElementById('content_frens').style.zIndex = '-100'
         document.getElementById('content_frens').style.opacity = '0'
-        document.getElementById('content_top').style.top = '100vh'
+        document.getElementById('content_top').style.top = '30vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
     }
@@ -38,13 +38,13 @@ function check_location() {
         document.getElementById('content_frens').style.zIndex = '100';
         document.getElementById('content_frens').style.opacity = '1';
 
-        document.getElementById('content_void').style.top = '100vh'
+        document.getElementById('content_void').style.top = '30vh'
         document.getElementById('content_void').style.zIndex = '-100'
         document.getElementById('content_void').style.opacity = '0'
-        document.getElementById('content_tasks').style.top = '100vh'
+        document.getElementById('content_tasks').style.top = '30vh'
         document.getElementById('content_tasks').style.zIndex = '-100'
         document.getElementById('content_tasks').style.opacity = '0'
-        document.getElementById('content_top').style.top = '100vh'
+        document.getElementById('content_top').style.top = '30vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
     }
@@ -53,13 +53,13 @@ function check_location() {
         document.getElementById('content_top').style.zIndex = '100';
         document.getElementById('content_top').style.opacity = '1';
 
-        document.getElementById('content_void').style.top = '100vh'
+        document.getElementById('content_void').style.top = '30vh'
         document.getElementById('content_void').style.zIndex = '-100'
         document.getElementById('content_void').style.opacity = '0'
-        document.getElementById('content_tasks').style.top = '100vh'
+        document.getElementById('content_tasks').style.top = '30vh'
         document.getElementById('content_tasks').style.zIndex = '-100'
         document.getElementById('content_tasks').style.opacity = '0'
-        document.getElementById('content_frens').style.top = '100vh'
+        document.getElementById('content_frens').style.top = '30vh'
         document.getElementById('content_frens').style.zIndex = '-100'
         document.getElementById('content_frens').style.opacity = '0'
     }

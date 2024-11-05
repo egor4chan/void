@@ -12,7 +12,7 @@ div.content {
     width: 100vw;
     height: 90vh;
     position: absolute;
-    top: 100vh;
+    top: 10vh;
     border-radius: 8px 8px 0px 0px;
     background-color: white;
     transition: 0.5s;
