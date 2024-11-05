@@ -5,7 +5,7 @@ body {
     background-color: rgb(247, 247, 247);
     height: 100vh;
     width: 100vw;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 div.content {
@@ -18,17 +18,11 @@ div.content {
     transition: 0.5s;
 }
 
-img#void {
-    width: 160px;
-    height: 160px;
-}
 
 div#void {
     position: relative;
     top: 160px;
     text-align: center;
-    width: 100%;
-    height: 200px;
 }
 
 nav {
@@ -42,6 +36,7 @@ nav {
 
     background-color: white;
     z-index: 101;
+    user-select: none;
 }
 
 nav > div {

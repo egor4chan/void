@@ -1,4 +1,6 @@
-let LocationNow = 1;
+var LocationNow = 1;
+
+check_location()
 
 function check_location() {
     if (LocationNow == 1) {
