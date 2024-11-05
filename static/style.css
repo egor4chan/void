@@ -6,6 +6,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    transition: 0.4s;
 }
 
 button {
@@ -78,4 +79,87 @@ button#upgrade {
     position: absolute;
     bottom: 90px;
     left: 10%
+}
+
+#content_frens {
+    text-align: center;
+}
+
+h3, h5 {
+    width: 80%;
+    left: 10%
+}
+
+#content_frens > h3 {
+    position: relative;
+    top: 40px;
+    font-weight: 500;
+}
+
+#content_frens > h5 {
+    position: relative;
+    top: 36px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#content_frens > h5#friends {
+    text-align: left;
+    position: relative;
+    top: 40px;
+    left: 7%;
+    color: grey;
+}
+
+div#friendlist {
+    width: 90%;
+    height: 40px;
+
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+#content_frens > h5 > a {
+    color: blue
+}
+
+#content_frens > div#faq {
+    width: 90%;
+    height: 160px;
+
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+}
+
+#content_frens > div#faq > button#invite {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#content_frens > div#faq > button#copy {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 18%;
+    height: 50px;
+    border-radius: 10px;
 }

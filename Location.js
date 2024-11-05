@@ -17,6 +17,8 @@ function check_location() {
         document.getElementById('content_top').style.top = '30vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
+
+        document.body.style.backgroundColor = 'rgb(247, 247, 247)'
     }
     if (LocationNow == 2) {
         document.getElementById('content_tasks').style.top = '10vh'
@@ -32,6 +34,8 @@ function check_location() {
         document.getElementById('content_top').style.top = '30vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
+
+        document.body.style.backgroundColor = 'rgb(247, 247, 247)'
     }
     if (LocationNow == 3) {
         document.getElementById('content_frens').style.top = '10vh'
@@ -47,6 +51,12 @@ function check_location() {
         document.getElementById('content_top').style.top = '30vh'
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
+
+        document.body.style.backgroundColor = 'white'
+
+        WebApp.headerColor = '#ffffff'
+        WebApp.backgroundColor = '#ffffff';
+        WebApp.bottomBarColor = '#ffffff'
     }
     if (LocationNow == 4) {
         document.getElementById('content_top').style.top = '10vh'
@@ -62,6 +72,8 @@ function check_location() {
         document.getElementById('content_frens').style.top = '30vh'
         document.getElementById('content_frens').style.zIndex = '-100'
         document.getElementById('content_frens').style.opacity = '0'
+
+        document.body.style.backgroundColor = 'rgb(247, 247, 247)'
     }
 }
 
