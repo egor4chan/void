@@ -35,7 +35,8 @@ function check_location() {
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
 
-        document.body.style.backgroundColor = 'rgb(247, 247, 247)'
+        document.body.style.backgroundColor = 'white'
+        document.body.style.overflowY = 'scroll'
     }
     if (LocationNow == 3) {
         document.getElementById('content_frens').style.top = '10vh'

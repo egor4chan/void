@@ -85,6 +85,10 @@ button#upgrade {
     text-align: center;
 }
 
+h1 {
+    font-weight: 500;
+}
+
 h3, h5 {
     width: 80%;
     left: 10%
@@ -131,7 +135,7 @@ div#friendlist {
     color: blue
 }
 
-#content_frens > div#faq {
+#content_frens > div#banner {
     width: 90%;
     height: 160px;
 
@@ -154,6 +158,149 @@ div#friendlist {
 }
 
 #content_frens > div#faq > button#copy {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 18%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#content_tasks {
+    text-align: center;
+}
+
+h3, h5 {
+    width: 80%;
+    left: 10%
+}
+
+#content_tasks > h3 {
+    position: relative;
+    top: 40px;
+    font-weight: 500;
+}
+
+#content_tasks > h5 {
+    position: relative;
+    top: 36px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#content_tasks > h5#friends {
+    text-align: left;
+    position: relative;
+    top: 40px;
+    left: 7%;
+    color: grey;
+}
+
+div#friendlist {
+    width: 90%;
+    height: 40px;
+
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+div#taskslist {
+    width: 90%;
+    height: 170px;
+
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+
+    text-align: left;
+    color: grey;
+    font-size: 12px;
+}
+
+div#taskslist > div {
+    width: 100%;
+    height: 50px;
+    margin-top: 1px;
+    border-radius: 10px;
+}
+
+div#taskslist > div > span {
+    color: black;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    color: blue;
+    left: 40px;
+}
+
+div#taskslist > div > span#name {
+    font-weight: 500;
+    color: black;
+    font-size: 14px;
+}
+
+#content_tasks > h5 > a {
+    color: blue
+}
+
+div#faq {
+    width: 90%;
+    height: 160px;
+
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+}
+
+div#banner {
+    width: 90%;
+    height:60px;
+
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    left: 5%;
+
+    background-color:white;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+div#faq > button#invite {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+div#faq > button#copy {
     background-color: black;
     color: white;
     position: absolute;
