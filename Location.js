@@ -19,6 +19,8 @@ function check_location() {
         document.getElementById('content_top').style.opacity = '0'
 
         document.body.style.backgroundColor = 'rgb(247, 247, 247)'
+        window.scrollTo(0, 0);
+        document.body.style.overflowY = 'hidden'
     }
     if (LocationNow == 2) {
         document.getElementById('content_tasks').style.top = '10vh'
@@ -54,6 +56,7 @@ function check_location() {
         document.getElementById('content_top').style.opacity = '0'
 
         document.body.style.backgroundColor = 'white'
+        document.body.style.overflowY = 'hidden'
 
         WebApp.headerColor = '#ffffff'
         WebApp.backgroundColor = '#ffffff';
