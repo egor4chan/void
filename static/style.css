@@ -683,3 +683,11 @@ div#task > h4 {
     user-select: none;
     cursor: pointer;
 }
+
+#taskslist > div > img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 21px;
+}

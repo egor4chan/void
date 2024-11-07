@@ -57,6 +57,7 @@ function check_location() {
 
         document.body.style.backgroundColor = 'white'
         document.body.style.overflowY = 'hidden'
+        window.scrollTo(0, 0);
 
         WebApp.headerColor = '#ffffff'
         WebApp.backgroundColor = '#ffffff';
