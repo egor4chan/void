@@ -78,6 +78,11 @@ function check_location() {
         document.getElementById('content_frens').style.opacity = '0'
 
         document.body.style.backgroundColor = 'rgb(247, 247, 247)'
+        document.body.style.overflowY = 'scroll'
+        WebApp.headerColor = '#ffffff'
+        WebApp.backgroundColor = '#ffffff';
+        WebApp.bottomBarColor = '#ffffff'
+        document.body.style.backgroundColor = 'white'
     }
 }
 
