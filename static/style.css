@@ -83,6 +83,21 @@ h3, h5 {
     left: 10%
 }
 
+#content_void > center > h3 {
+    position: relative;
+    top: 40px;
+    font-weight: 500;
+    left: 0px;
+}
+
+#content_void > h5 {
+    text-align: center;
+    position: relative;
+    top: 36px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
 #content_frens > h3 {
     position: relative;
     top: 40px;
@@ -121,6 +136,9 @@ div#friendlist {
 }
 
 #content_frens > h5 > a {
+    color: blue
+}
+#content_void > h5 > a {
     color: blue
 }
 
@@ -479,12 +497,14 @@ div#meintop > p {
 div#games {
     width: 90%;
     left: 5%;
-    height: 120px;
+    height: 160px;
 
     position: absolute;
     top: 200px;
     flex-wrap: wrap;
     display: flex;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
 }
 
 div#games > div {
@@ -494,15 +514,18 @@ div#games > div {
     border-radius: 8px;
 }
 
+
 div#games-two {
     width: 90%;
     left: 5%;
-    height: 120px;
+    height: 160px;
 
     position: absolute;
-    top: 330px;
+    top: 370px;
     flex-wrap: wrap;
     display: flex;
+
+    text-align: center;
 }
 
 div#games-two > div {
@@ -510,6 +533,7 @@ div#games-two > div {
     height: 100%;
     border: 1px solid blue;
     border-radius: 8px;
+    background-color: rgb(255, 255, 255);
 }
 
 #startpage {
@@ -549,4 +573,62 @@ h1#present {
     to {
         width: 100%;
     }
+}
+
+div#games > div > button {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 90%;
+    margin-left: 0.5px;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
+div#games-two > div > button {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 90%;
+    margin-left: 0.5px;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border: 1px solid blue;
+}
+
+div#games > div > h2 {
+    position: absolute;
+    left: 5%;
+    top: -10px;
+    font-weight: 400;
+}
+
+div#games > div > h4 {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    font-weight: 400;
+    color: blue;
+}
+
+div#games-two > div > h2 {
+    position: absolute;
+    left: 5%;
+    top: -10px;
+    font-weight: 400;
+}
+
+div#games-two > div > h4 {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    font-weight: 400;
+    color: blue;
 }
