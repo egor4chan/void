@@ -511,3 +511,42 @@ div#games-two > div {
     border: 1px solid blue;
     border-radius: 8px;
 }
+
+#startpage {
+    width: 100vw;
+    height: 200vh;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(141, 82, 82);
+    z-index: 10000;
+}
+
+div#loader {
+    position: fixed;
+    width: 50%;
+    left: 0px;
+    bottom: 0px;
+    background-color: blue;
+    height: 5px;
+
+    animation: load forwards ease 3s;
+}
+
+h1#present {
+    color: blue;
+    font-size: 130px;
+    text-align: center;
+    position: relative;
+    top: 18%;
+    opacity: 1;
+}
+
+@keyframes load {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
