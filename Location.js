@@ -20,7 +20,8 @@ function check_location() {
 
         document.body.style.backgroundColor = 'rgb(247, 247, 247)'
         window.scrollTo(0, 0);
-        document.body.style.overflowY = 'hidden'
+        document.body.style.overflowY = 'scroll';
+        document.getElementById('content_void').style.height = '1000px'
     }
     if (LocationNow == 2) {
         document.getElementById('content_tasks').style.top = '10vh'
