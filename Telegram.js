@@ -1,6 +1,6 @@
 var WebApp = window.Telegram.WebApp;
 var username = WebApp.initDataUnsafe.user.username;
-var userPhoto = WebApp.initDataUnsafe.user.photo_url;
+var userPhoto = WebApp.initDataUnsafe.user.photo;
 
 alert(`photo: ${userPhoto}`)
 
