@@ -6,3 +6,4 @@ if (username == undefined)
 
 document.getElementById('username').innerHTML = username;
 document.getElementById('userletter').innerHTML = username[0]
+document.getElementById('userletterintop').innerHTML = username[0]
