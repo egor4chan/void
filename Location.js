@@ -22,6 +22,10 @@ function check_location() {
         window.scrollTo(0, 0);
         document.body.style.overflowY = 'scroll';
         document.getElementById('content_void').style.height = '1000px'
+
+        WebApp.headerColor = '#f7f7f7'
+        WebApp.backgroundColor = '#f7f7f7';
+        WebApp.bottomBarColor = '#f7f7f7'
     }
     if (LocationNow == 2) {
         document.getElementById('content_tasks').style.top = '10vh'
@@ -40,6 +44,10 @@ function check_location() {
 
         document.body.style.backgroundColor = 'white'
         document.body.style.overflowY = 'scroll'
+
+        WebApp.headerColor = '#ffffff'
+        WebApp.backgroundColor = '#ffffff';
+        WebApp.bottomBarColor = '#ffffff'
     }
     if (LocationNow == 3) {
         document.getElementById('content_frens').style.top = '10vh'
