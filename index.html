@@ -23,8 +23,12 @@
     </div>
     <div class="content" id="content_void" style="opacity: 1; z-index: 10;">
         <center>
-        <div id="userphoto"></div>
-        <h3 id="username">@realmefer</h3>
+        <div id="userphoto">
+            <img id='userphotourl' src="static/durov.png" alt="">
+        </div>
+       
+            <h3 id="username" style="top: 50px">@realmefer</h3>
+       
         <div id="userdata">
             <div>
                 <h2>34.4K</h2>
@@ -39,14 +43,13 @@
                 <span>frens</span>
             </div>
         </div>
+
+        <div id="boarder"></div>
+
         </center>
 
-        <center><h3>play and earn</h3></center>
+        <center><h3 style="margin-top: 40px;">play and earn</h3></center>
         <h5>play this games every day and get daily rewards. <a>sorry?</a></h5>
-
-        <div id="voidbanner">
-
-        </div>
 
         <div id="gamesboard">
         <div id="games">
@@ -250,6 +253,8 @@
         <button id="taskButton" onclick="send_notify('???')">connect wallet</button>
     </div>
 
+    <script src="Telegram.js"></script>
+    <script src="Game.js"></script>
     <script src="Background.js"></script>
     <script src="Notification.js"></script>
     <script src="Tasks.js"></script>
