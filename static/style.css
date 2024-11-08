@@ -827,6 +827,16 @@ footer {
     color: blue;
 }
 
+#userletter {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: -5%;
+    font-size: 36px;
+    font-weight: 500;
+    color: blue;
+}
+
 #userphoto > img {
     width: 95%;
     height: 95%;
@@ -840,4 +850,11 @@ footer {
     border-bottom: 1px solid rgb(228, 228, 228);
     position: absolute;
     top: 300px;
+}
+
+#meintop > #userletter {
+    font-size: 26px;
+    position: absolute;
+    width: 50%;
+    left: 6%;
 }
