@@ -5,7 +5,7 @@ var userPhoto = WebApp.initDataUnsafe.user.photo_url;
 alert(`photo: ${userPhoto}`)
 
 if (username == undefined) 
-    username = 'noname'
+    username = `id${WebApp.initDataUnsafe.user.id}`
 
 document.getElementById('username').innerHTML = username;
 document.getElementById('userphotourl').setAttribute('src', userPhoto)
