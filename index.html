@@ -14,32 +14,39 @@
     
 </head>
 <body>
+    <div id="gamecloud">
+        
+    </div>
+    <div id="notify">
+        <img src="static/IMG_1016.PNG" alt="">
+        <span id="message">game is not aviable now. wait new realise.</span>
+    </div>
     <div class="content" id="content_void" style="opacity: 1; z-index: 10;">
         <center><h3>play and earn</h3></center>
         <h5>play this games every day and get daily rewards. <a>sorry?</a></h5>
         
         <div id="games">
-            <div>
+            <div id="hold">
                 <h2>hold</h2>
                 <h4>+1,000 ?</h4>
-                <button>play</button>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
             </div>
             <div style="position:absolute;right: 0px;">
                 <h2>spam</h2>
                 <h4>+2,000 ?</h4>
-                <button>play</button>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
             </div>
         </div>
         <div id="games-two">
             <div>
                 <h2>luck</h2>
                 <h4>+1,000 ?</h4>
-                <button>play</button>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
             </div>
             <div style="position:absolute;right: 0px;">
                 <h2>secret</h2>
                 <h4>+???,???</h4>
-                <button>play</button>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
             </div>
         </div>
     </div>
@@ -121,6 +128,7 @@
         <h3>invite friends</h3>
         <h5>You and your friend will receive bonuses for invitation. <a>what?</a></h5>
         <div id="faq">
+            <span>you will <a>receive 20%</a> of your friends earnings. also you will receive <a>one-time 1,000 ?</a></span>
             <button id="invite">Invite</button>
             <button id="copy">+</button>
         </div>
@@ -214,10 +222,11 @@
         <a id="close" onclick="close_task()">x</a>
         <h2 id="taskName">ton transaction</h2>
         <h4 id="taskAbout">connect wallet and make simple ton transaction into our wallet.</h4>
-        <button id="taskButton">connect wallet</button>
+        <button id="taskButton" onclick="send_notify('???')">connect wallet</button>
     </div>
 
-      <!-- <script src="Background.js"></script> -->
+    <script src="Background.js"></script>
+    <script src="Notification.js"></script>
     <script src="Tasks.js"></script>
     <script src="Location.js"></script>
     <script src="Basic.js"></script>

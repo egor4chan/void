@@ -14,7 +14,7 @@ function create_element() {
 }
 
 
-setInterval(() => {create_element()}, 1000)
+//setInterval(() => {create_element()}, 1000)
 
 
 
