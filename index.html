@@ -171,9 +171,21 @@
     <!--  top   -->
       <div class="content" id="content_top" style="opacity: 0; z-index: -100;">
         <div id="circus">
-            <div id="top-2" style="margin-right: 10px;"></div>
-            <div id="top-1" style="width: 120px;height: 120px;"></div>
-            <div id="top-3" style="margin-left: 10px;"></div>
+            <div id="top-2" style="margin-right: 10px; margin-top: 16px;">
+                <img src="static/durov.png" alt="" class="topimg">
+                <a>2</a>
+            </div>
+            <div id="top-1" style="width: 120px;height: 120px;">
+                <img src="static/durov.png" alt="" class="topimg">
+                <a>1</a>
+            </div>
+            <div id="top-3" style="margin-left: 10px; margin-top: 16px;">
+                <img src="static/durov.png" alt="" class="topimg">
+                <a>3</a>
+            </div>
+
+            
+
         </div>
         <div id="leaders">
             <div id="settings">
@@ -255,6 +267,30 @@
         <h2 id="taskName">ton transaction</h2>
         <h4 id="taskAbout">connect wallet and make simple ton transaction into our wallet.</h4>
         <button id="taskButton" onclick="send_notify('???')">connect wallet</button>
+    </div>
+
+    <div id="game_hold"  style="opacity: 0; z-index: -100;">
+        <div id="game_cloud">d</div>
+    </div>
+
+
+    <div id="dailyreward">
+        <h1>daily rewards</h1>
+
+        <div id="baraban">
+            <div>
+                <h2 style="color: grey;">0?</h2>
+            </div>
+            <div style="border-bottom: 3px solid blue; scale: 1.1">
+                <h2>100?</h2>
+            </div>
+            <div>
+                <h2 style="color: grey;">500?</h2>
+            </div>
+        </div>
+
+        <span onclick="remove_dr()">maybe, later...</span>
+        <button>subscribe for claim</button>
     </div>
 
     <script src="Telegram.js"></script>
