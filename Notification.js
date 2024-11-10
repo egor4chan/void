@@ -5,6 +5,8 @@ var notify_status = 0
 
 
 function send_notify(message) {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.HapticFeedback.impactOccurred('light')
     if (notify_status == 0) {
         notify_status = 1
         notify.style.top = '20px';

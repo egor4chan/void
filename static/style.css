@@ -954,9 +954,44 @@ footer {
     cursor: pointer;
 }
 
+#dailyreward > h2 {
+    position: relative;
+    color: grey;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+    left: 10%;
+}
+
+#leadersnames {
+    width: 90%;
+    color: red;
+    height: 50px;
+    
+    position: absolute;
+    left: 5%;
+    display: flex;
+}
+
+#leadersnames > div {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: black;
+    margin-top: -20px;
+}
+
+.balancetop {
+    color: blue;
+}
+
 #baraban {
     width: 100%;
-    height: 45%;
+    height: 30%;
     display: flex;
     text-align: center;
     align-items: center;
