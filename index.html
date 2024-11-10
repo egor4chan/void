@@ -216,7 +216,7 @@
             </div>
             </div>
 
-            <button id="upgrade">+ Upgrade rank</button>
+            <button id="upgrade" onclick="boost()">+ boost your rank</button>
             <h5 id="topusers">top users</h5>
 
             <div id="users">
@@ -306,6 +306,36 @@
         <button href="https://t.me/playvoid">subscribe for claim</button>
     </div>
 
+    <div id="boostcloud">
+        <a id="close" onclick="close_boost()">x</a>
+        <h1><a>earn</a> <br> points faster</h1>
+
+        <div id="stars">
+            <div style="border: 1px solid blue;" onclick="select(1)" id="s1">
+                <span>+10,000 ?</span>
+            </div>
+            <div onclick="select(2)" id="s2">
+                <span>+25,000 ?</span>
+            </div>
+            <div onclick="select(3)" id="s3">
+                <span>+50,000 ?</span>
+            </div>
+            <div onclick="select(4)" id="s4">
+                <span>+100,000 ?</span>
+            </div>
+            <div onclick="select(5)" id="s5">
+                <span>+250,000 ?</span>
+            </div>
+            <div onclick="select(6)" id="s6">
+                <span>+1,000,000 ?</span>
+            </div>
+            
+        </div>
+
+        <button>buy for stars</button>
+    </div>
+
+    <script src="Boost.js"></script>
     <script src="Telegram.js"></script>
     <script src="Game.js"></script>
     <script src="Background.js"></script>
