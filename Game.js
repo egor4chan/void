@@ -22,11 +22,17 @@ function close_game_cloud() {
 
 document.getElementById('clicker').addEventListener('mousedown', ()=> {
     var WebApp = window.Telegram.WebApp;
-    WebApp.HapticFeedback.impactOccurred('light')
+    WebApp.HapticFeedback.impactOccurred('light');
     var width = randomIntFromInterval(-10, 90);
     var elem = document.createElement('h4');
     elem.style.left = `${width}%`
     elem.innerHTML = '?'
-    document.getElementById('gamespam').appendChild(elem)
+    document.getElementById('gamespam').appendChild(elem);
+
+    document.getElementById('clicker').style.scale = '0.95';
+
+    setTimeout(()=> {
+        document.getElementById('clicker').style.scale = '1';
+    }, 100)
 })
 

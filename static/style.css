@@ -1111,9 +1111,6 @@ footer {
     transition: 0.1s;
 }
 
-#clicker:active {
-    scale: 1.1;
-}
 
 #gamespam > h4 {
     font-weight: 400;
