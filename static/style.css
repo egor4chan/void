@@ -1075,3 +1075,123 @@ footer {
     background-color: blue;
     color: white;
 }
+
+.game {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    bottom: -80%;
+    left: 0;
+    background-color: white;
+    z-index: -10000;
+    transition: 0.4s;
+}
+
+.game > h1 {
+    font-size:24px;margin-top: 80px;
+}
+
+.game > center > h5 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 50px;
+    text-align: center;
+    color: grey;
+    
+}
+
+#clicker {
+    color: blue;
+    font-size: 150px;
+    width: 30%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100000;
+    transition: 0.1s;
+}
+
+#clicker:active {
+    scale: 1.1;
+}
+
+#gamespam > h4 {
+    font-weight: 400;
+    font-size: 100px;
+    color: blue;
+    opacity: 1;
+    position: absolute;
+
+    top: -200px;
+    animation: drop 1s forwards ease-in;
+    z-index: -1;
+    user-select: none;
+}
+
+@keyframes drop {
+    from {
+        top: -240px;
+    }
+
+    to {
+        top: 100%
+    }
+}
+
+#closegame {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#gamespam {
+    text-align: center;
+}
+
+#gamespam > h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+#gamespam > center > span {
+    font-size: 130px;
+    background-color: #f6f6f6;
+    position: relative;
+    top: 100px;
+    border-radius: 50%;
+    display: block;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 0px 30px #f6f6f6;
+    user-select: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#gamespam > center > span:active {
+    color: blue
+}
+
+#time {
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: blue;
+    transition: 30s linear;
+}
+
+#question {
+    top: -340px;
+    font-size: 100px;
+    color: blue;
+    filter: blue(10px);
+    user-select: none;
+}

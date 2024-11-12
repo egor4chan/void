@@ -7,14 +7,14 @@ function create_element() {
     element.innerHTML = '?';
     element.setAttribute('id', 'question');
     element.style.left = `${randomIntFromInterval(-1, 96)}%`
-    document.body.appendChild(element);
+    document.getElementById('gamespam').appendChild(element);
 
     setTimeout(()=>{element.style.top = '120%';}, 100)
     setTimeout(()=>{element.remove()}, 15000)
 }
 
 
-//setInterval(() => {create_element()}, 1000)
+setInterval(() => {create_element()}, 1000)
 
 
 

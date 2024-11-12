@@ -59,7 +59,7 @@
                 <h4>+1,000 ?</h4>
                 <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
             </div>
-            <div style="position:absolute;right: 0px;">
+            <div style="position:absolute;right: 0px;" onclick="open_game_cloud()">
                 <h2>spam</h2>
                 <h4>+2,000 ?</h4>
                 <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
@@ -333,6 +333,13 @@
         </div>
 
         <button>buy for stars</button>
+    </div>
+
+    <div id="gamespam" class="game">
+        <span id="closegame" onclick="close_game_cloud()"><< BACK</span>
+        <h1>spam</h1><center>
+        <h5>click on ? and earn points.</h5>
+        <h1 id="clicker">?</h1></center>
     </div>
 
     <script src="Boost.js"></script>
