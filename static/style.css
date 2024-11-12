@@ -1135,6 +1135,14 @@ footer {
     }
 }
 
+#balance {
+    transition: 0.4s;
+}
+
+#description {
+    transition: 0.4s;
+}
+
 #closegame {
     position: absolute;
     left: 20px;

@@ -1,6 +1,8 @@
 var void_cloud = document.getElementById('content_void');
 
 var session = 0
+var game_profit = 0
+
 
 
 function open_game_cloud() {
@@ -18,9 +20,42 @@ function close_game_cloud() {
     document.getElementById('gamespam').style.opacity = '0'
     document.getElementById('gamespam').style.zIndex = '-10000'
     document.body.style.overflowY = 'scroll'
+
+    session = 0
+    game_profit = 0
+
+    setTimeout(()=>{
+        document.getElementById('balance').innerHTML = 'spam';
+        document.getElementById('balance').style.fontSize = '24px'
+        document.getElementById('description').style.opacity = 1;
+
+        document.getElementById('time').style = 'transition: 0s; width: 100%;'
+        setTimeout(()=>{
+            document.getElementById('time').style = 'transition: 30s;'
+        }, 500)
+        
+    }, 500)
+    
 }
 
 document.getElementById('clicker').addEventListener('mousedown', ()=> {
+
+    game_profit++;
+    if (session == 0) {
+        document.getElementById('balance').innerHTML = game_profit;
+        document.getElementById('balance').style.fontSize = '40px'
+        document.getElementById('description').style.opacity = 0;
+
+        document.getElementById('time').style.width = '0%'
+        session = 1;
+
+        setTimeout(() => {
+            // награждение, начисление баланса
+            close_game_cloud()
+        }, 30000);
+    }
+    if (session == 1) {
+    document.getElementById('balance').innerHTML = game_profit;
     var WebApp = window.Telegram.WebApp;
     WebApp.HapticFeedback.impactOccurred('light');
     var width = randomIntFromInterval(-10, 90);
@@ -34,5 +69,7 @@ document.getElementById('clicker').addEventListener('mousedown', ()=> {
     setTimeout(()=> {
         document.getElementById('clicker').style.scale = '1';
     }, 100)
+    }
+    
 })
 
