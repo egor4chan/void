@@ -19,4 +19,4 @@ function daily_reward() {
     document.getElementById('content_void').style.filter = 'blur(20px)'
 }
 
-setTimeout(()=>{daily_reward()}, 1000)
+setTimeout(()=>{daily_reward()}, 200)

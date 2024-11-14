@@ -1,5 +1,9 @@
 var LocationNow = 1;
 
+function go_to_channel() {
+    window.location.href = 'https://t.me/playvoid'
+}
+
 check_location()
 
 function check_location() {

@@ -303,7 +303,7 @@
         </div>
 
         <span onclick="remove_dr()">maybe, later...</span>
-        <button href="https://t.me/playvoid">subscribe for claim</button>
+        <button onclick="go_to_channel()">subscribe for claim</button>
     </div>
 
     <div id="boostcloud">
@@ -341,6 +341,15 @@
         <h5 id="description">click on ? and earn points. for begining - just click.</h5>
         <h1 id="clicker">?</h1></center>
         <div id="time"></div>
+    </div>
+
+    <div id="gameend">
+        <h1>good game?</h1>
+        <center>
+        <h5>you earn <a>1029 ?</a> in this game. wait some time and play again, or <a>buy game</a> for stars.</h5>
+        </center>
+        <button id="again">play again</button>
+        <button onclick="close_game_cloud()">claim</button>
     </div>
 
     <script src="Boost.js"></script>

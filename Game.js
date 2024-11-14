@@ -15,16 +15,24 @@ function open_game_cloud() {
 }
 
 function close_game_cloud() {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.HapticFeedback.impactOccurred('light');
+    
+    document.getElementById('gameend').style.top = '100%';
+    document.getElementById('gameend').style.opacity = '0';
+
     document.getElementById('content_void').style.filter = 'blur(0px)'
     document.getElementById('gamespam').style.bottom = '-80%';
     document.getElementById('gamespam').style.opacity = '0'
     document.getElementById('gamespam').style.zIndex = '-10000'
+    document.getElementById('gamespam').style.filter = 'blur(0px)'
     document.body.style.overflowY = 'scroll'
 
     session = 0
     game_profit = 0
 
     setTimeout(()=>{
+        
         document.getElementById('balance').innerHTML = 'spam';
         document.getElementById('balance').style.fontSize = '24px'
         document.getElementById('description').style.opacity = 1;
@@ -51,7 +59,10 @@ document.getElementById('clicker').addEventListener('mousedown', ()=> {
 
         setTimeout(() => {
             // награждение, начисление баланса
-            close_game_cloud()
+            document.getElementById('gameend').style.top = '200px';
+            document.getElementById('gameend').style.opacity = '1'
+            document.getElementById('gamespam').style.filter = 'blur(8px)'
+            
         }, 30000);
     }
     if (session == 1) {

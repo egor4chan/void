@@ -1199,4 +1199,57 @@ footer {
     color: blue;
     filter: blue(10px);
     user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#gameend {
+    width: 90%;
+    position: fixed;
+    left: 5%;
+    height: 300px;
+    top: 100%; /* 200px */
+    border-radius: 8px;
+    border: 1px solid #efefef;
+    background-color: white;
+    z-index: 100000;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#gameend > button {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 20px;
+    height: 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+
+#gameend > h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#gameend > center > h5 {
+    font-weight: 400;
+    text-align: center;
+}
+
+#gameend > center > h5 > a {
+    color: blue;
+}
+
+#gameend > button#again {
+    position: absolute;
+    bottom: 80px;
+    background-color: #ffff;
+    color: blue;
+    border: 1px solid blue;
 }
