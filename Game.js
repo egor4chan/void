@@ -17,7 +17,7 @@ function open_game_cloud() {
 function close_game_cloud() {
     var WebApp = window.Telegram.WebApp;
     WebApp.HapticFeedback.impactOccurred('light');
-    
+
     document.getElementById('gameend').style.top = '100%';
     document.getElementById('gameend').style.opacity = '0';
 
@@ -63,6 +63,7 @@ document.getElementById('clicker').addEventListener('mousedown', ()=> {
             document.getElementById('gameend').style.opacity = '1'
             document.getElementById('gamespam').style.filter = 'blur(8px)'
             
+            document.getElementById('summaryearn').innerHTML = document.getElementById('balance').innerHTML
         }, 30000);
     }
     if (session == 1) {

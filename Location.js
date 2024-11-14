@@ -1,7 +1,10 @@
 var LocationNow = 1;
 
 function go_to_channel() {
+    // сделать проверку подписан ли юзер
     window.location.href = 'https://t.me/playvoid'
+    document.getElementById('dailybutton').innerHTML = 'check and Claim'
+    document.getElementById('dailybutton').setAttribute('onclick', 'remove_dr()') //сделать функцию сбора ежедневки
 }
 
 check_location()
