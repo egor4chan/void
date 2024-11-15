@@ -58,13 +58,16 @@ document.getElementById('clicker').addEventListener('mousedown', ()=> {
         session = 1;
 
         setTimeout(() => {
+            if (session == 1) { // если юзер до сих пор в окне игры
             // награждение, начисление баланса
             document.getElementById('gameend').style.top = '200px';
             document.getElementById('gameend').style.opacity = '1'
             document.getElementById('gamespam').style.filter = 'blur(8px)'
-            
+            document.getElementById('claimbtn').setAttribute('onclick', 'close_game_cloud()')
             document.getElementById('summaryearn').innerHTML = document.getElementById('balance').innerHTML
-        }, 30000);
+            }
+        }, 30000)
+    
     }
     if (session == 1) {
     document.getElementById('balance').innerHTML = game_profit;

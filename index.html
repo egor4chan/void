@@ -54,27 +54,27 @@
 
         <div id="gamesboard">
         <div id="games">
-            <div id="hold">
+            <div id="hold" onclick="open_game_hold()">
                 <h2>hold</h2>
                 <h4>+1,000 ?</h4>
-                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
+                <button>soon</button>
             </div>
             <div style="position:absolute;right: 0px;" onclick="open_game_cloud()">
                 <h2>spam</h2>
                 <h4>+2,000 ?</h4>
-                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
+                <button>play</button>
             </div>
         </div>
         <div id="games-two">
             <div>
                 <h2>luck</h2>
                 <h4>+1,000 ?</h4>
-                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">soon</button>
             </div>
             <div style="position:absolute;right: 0px;">
                 <h2>secret</h2>
                 <h4>+???,???</h4>
-                <button onclick="send_notify('Game is not aviable now. wait the new path.')">play</button>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">soon</button>
             </div>
             </div>
         </div>
@@ -350,11 +350,18 @@
 
     <div id="gamespam" class="game">
         <span id="closegame" onclick="close_game_cloud()"><< BACK</span>
-        <span id="timeuntilend"></span>
         <h1 id="balance">spam</h1><center>
         <h5 id="description">click on ? and earn points. for begining - just click.</h5>
         <h1 id="clicker">?</h1></center>
         <div id="time"></div>
+    </div>
+
+    <div id="gamehold" class="game">
+        <span id="closegame" onclick="close_game_hold()"><< BACK</span>
+        <h1 id="hold_balance">hold</h1><center>
+        <h5 id="hold_description">hold ? as it possible and earn points. for beginning - start holding.</h5>
+        <h1 id="holder">?</h1></center>
+        <div id="hold_time"></div>
     </div>
 
     <div id="gameend">
@@ -363,9 +370,10 @@
         <h5>you earn <a id="summaryearn">1029</a>? in this game. wait some time and play again, or <a>buy game and play right now!</a> for stars.</h5>
         </center>
         <button id="again">play again</button>
-        <button onclick="close_game_cloud()">claim</button>
+        <button onclick="close_game_cloud()" id="claimbtn">claim</button>
     </div>
 
+    <script src="Hold.js"></script>
     <script src="Boost.js"></script>
     <script src="Telegram.js"></script>
     <script src="Game.js"></script>
