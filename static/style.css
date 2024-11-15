@@ -1226,6 +1226,15 @@ footer {
     top: 40px;
 }
 
+#gameluck > h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 #gamehold > h1 {
     text-align: center;
     position: relative;
@@ -1334,4 +1343,58 @@ footer {
 
 #gamehold > center > #clicker {
     color: black;
+}
+
+#gameluck > center > img {
+    width: 100px;
+    height: 100px;
+}
+
+#pointer {
+    width: 48px;
+    position: relative;
+    top: 62px;
+    z-index: 10;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#wheel {
+    position: relative;
+    width: 240px;
+    transition: 5s;
+    top: 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.bet {
+    position: absolute;
+    bottom: 40px;
+    width: 38%;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#whitebet {
+    left: 10%;
+    border: 1px solid rgb(202, 202, 202);
+    color: black;
+    background-color: white;
+    border-bottom: 3px solid rgb(215, 215, 215);
+}
+
+#bluebet {
+    right: 10%;
+    border: 1px solid rgb(0, 63, 126);
+    background-color: blue;
+    color: white;
+    border-bottom: 3px solid rgb(2, 2, 136);
 }

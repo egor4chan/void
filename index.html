@@ -57,7 +57,7 @@
             <div id="hold" onclick="open_game_hold()">
                 <h2>hold</h2>
                 <h4>+1,000 ?</h4>
-                <button>soon</button>
+                <button>play</button>
             </div>
             <div style="position:absolute;right: 0px;" onclick="open_game_cloud()">
                 <h2>spam</h2>
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div id="games-two">
-            <div>
+            <div onclick="open_game_luck()">
                 <h2>luck</h2>
                 <h4>+1,000 ?</h4>
                 <button onclick="send_notify('Game is not aviable now. wait the new path.')">soon</button>
@@ -364,6 +364,22 @@
         <div id="hold_time"></div>
     </div>
 
+    <div id="gameluck" class="game">
+        <span id="closegame" onclick="close_game_luck()"><< BACK</span>
+        <h1 id="luck_balance">luck</h1><center>
+        <h5 id="luck_description">just use your luck</h5>
+
+        <center>
+        <img src="static/pointer.PNG" id="pointer"><br>
+        <img src="static/roulette.PNG" id="wheel">
+
+        <button id="whitebet" class="bet" onclick="create_game('white')">white</button>
+        <button id="bluebet" class="bet" onclick="create_game('blue')">blue</button>
+        </center>
+
+        
+    </div>
+
     <div id="gameend">
         <h1>good game?</h1>
         <center>
@@ -373,6 +389,7 @@
         <button onclick="close_game_cloud()" id="claimbtn">claim</button>
     </div>
 
+    <script src="Luck.js"></script>
     <script src="Hold.js"></script>
     <script src="Boost.js"></script>
     <script src="Telegram.js"></script>
