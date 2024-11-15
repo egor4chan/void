@@ -3,6 +3,9 @@ function randint(min, max) { // min and max included
   }
 
 function open_game_luck() {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.headerColor = '#0000FF'
+    
     document.getElementById('content_void').style.filter = 'blur(8px)'
 
     document.getElementById('gameluck').style.bottom = '0px';
@@ -13,6 +16,9 @@ function open_game_luck() {
 }
 
 function close_game_luck() {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.headerColor = '#f7f7f7'
+
     var WebApp = window.Telegram.WebApp;
     WebApp.HapticFeedback.impactOccurred('light');
 

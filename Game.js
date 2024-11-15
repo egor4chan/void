@@ -6,6 +6,9 @@ var game_profit = 0
 
 
 function open_game_cloud() {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.headerColor = '#0000FF'
+
     document.getElementById('content_void').style.filter = 'blur(8px)'
     document.getElementById('gamespam').style.bottom = '0px';
     document.getElementById('gamespam').style.opacity = '1'
@@ -15,6 +18,9 @@ function open_game_cloud() {
 }
 
 function close_game_cloud() {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.headerColor = '#f7f7f7'
+    
     var WebApp = window.Telegram.WebApp;
     WebApp.HapticFeedback.impactOccurred('light');
 
