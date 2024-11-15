@@ -569,11 +569,12 @@ div#loader {
 
 h1#present {
     color: blue;
-    font-size: 130px;
+    font-size: 80px;
     text-align: center;
     position: relative;
-    top: 18%;
+    top: 33%;
     opacity: 1;
+    transition: 0.2s;
 }
 
 @keyframes load {
@@ -1398,3 +1399,4 @@ footer {
     color: white;
     border-bottom: 3px solid rgb(2, 2, 136);
 }
+
