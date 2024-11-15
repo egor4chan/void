@@ -47,7 +47,7 @@ var level = 1
 var hold_session = 0
 
 // зажал холдер
-holder.addEventListener('mousedown', ()=>{
+holder.addEventListener('touchstart', ()=>{
     if (hold_session == 0) { // первое нажатие
         hold_session = 1
         document.getElementById('hold_balance').innerHTML = level
@@ -87,7 +87,7 @@ holder.addEventListener('mousedown', ()=>{
     
 })
 // отпустил холдер
-holder.addEventListener('mouseup', ()=>{
+holder.addEventListener('touchend', ()=>{
     holder.style.color = 'black'
     holder.style.scale = 1;
     scale = 1
