@@ -308,35 +308,49 @@
 
     <div id="boostcloud">
         <a id="close" onclick="close_boost()">x</a>
-        <h1><a>earn</a> <br> points faster</h1>
-
+        <h1><a>boost</a> <br> your rank</h1>
+        <center><h5>buy points? for stars and get higher rank instant.</h5></center>
+        
         <div id="stars">
             <div style="border: 1px solid blue;" onclick="select(1)" id="s1">
+                <h1>?</h1>
                 <span>+10,000 ?</span>
+                <span id="starprice">500 ⭐</span>
             </div>
             <div onclick="select(2)" id="s2">
+                <h1>?</h1>
                 <span>+25,000 ?</span>
+                <span id="starprice">1250 ⭐</span>
             </div>
             <div onclick="select(3)" id="s3">
+                <h1>?</h1>
                 <span>+50,000 ?</span>
+                <span id="starprice">2500 ⭐</span>
             </div>
             <div onclick="select(4)" id="s4">
+                <h1>?</h1>
                 <span>+100,000 ?</span>
+                <span id="starprice">5000 ⭐</span>
             </div>
             <div onclick="select(5)" id="s5">
+                <h1>?</h1>
                 <span>+250,000 ?</span>
+                <span id="starprice">12500 ⭐</span>
             </div>
             <div onclick="select(6)" id="s6">
+                <h1>?</h1>
                 <span>+1,000,000 ?</span>
+                <span id="starprice">50000 ⭐</span>
             </div>
             
         </div>
 
-        <button>buy for stars</button>
+        <button onclick="buy_rank()">buy for stars</button>
     </div>
 
     <div id="gamespam" class="game">
         <span id="closegame" onclick="close_game_cloud()"><< BACK</span>
+        <span id="timeuntilend"></span>
         <h1 id="balance">spam</h1><center>
         <h5 id="description">click on ? and earn points. for begining - just click.</h5>
         <h1 id="clicker">?</h1></center>
@@ -346,7 +360,7 @@
     <div id="gameend">
         <h1>good game?</h1>
         <center>
-        <h5>you earn <a id="summaryearn">1029</a>? in this game. wait some time and play again, or <a>buy game</a> for stars.</h5>
+        <h5>you earn <a id="summaryearn">1029</a>? in this game. wait some time and play again, or <a>buy game and play right now!</a> for stars.</h5>
         </center>
         <button id="again">play again</button>
         <button onclick="close_game_cloud()">claim</button>

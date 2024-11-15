@@ -3,12 +3,20 @@ function boost() {
     document.getElementById('content_top').style.filter = 'blur(10px)'
 }
 
+function buy_rank() {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.HapticFeedback.impactOccurred('light')
+    
+}
+
 function close_boost() {
     document.getElementById('boostcloud').style.bottom = '-90%';
     document.getElementById('content_top').style.filter = 'blur(0px)'
 }
 
 function select(pos) {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.HapticFeedback.impactOccurred('light')
     if (pos == 1) {
         document.getElementById('s1').style.border = '1px solid blue'
 
