@@ -12,11 +12,11 @@ function remove_dr() {
     document.getElementById('content_void').style.filter = 'blur(0px)'
 }
 
-function daily_reward() {
-    var WebApp = window.Telegram.WebApp;
-    WebApp.HapticFeedback.impactOccurred('light')
-    document.getElementById('dailyreward').style.bottom = '0px';
-    document.getElementById('content_void').style.filter = 'blur(20px)'
-}
+//function daily_reward() {
+//    var WebApp = window.Telegram.WebApp;
+    //WebApp.HapticFeedback.impactOccurred('light')
+    //document.getElementById('dailyreward').style.bottom = '0px';
+    //document.getElementById('content_void').style.filter = 'blur(20px)'
+//}
 
 setTimeout(()=>{daily_reward()}, 200)
