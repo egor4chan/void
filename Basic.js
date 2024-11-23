@@ -1,5 +1,5 @@
 var WebApp = window.Telegram.WebApp;
-WebApp.expand()
+WebApp.requestFullscreen()
 
 WebApp.headerColor = '#f7f7f7'
 WebApp.backgroundColor = '#f7f7f7';
